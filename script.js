@@ -188,8 +188,12 @@ function personajesseleccionados () {
         fetch("https://dragonball-api.com/api/characters?gender="+eleccionGenero.value+"&race="+razaescogida)
         .then((response) => response.json())
         .then((data) => {
+            botonpaginaAnt.setAttribute ("disabled", "true")
+            botonpaginaSig.setAttribute ("disabled", "true")
+
             let personajes = [];
             if (eleccionGenero) {
+
                 personajes = data;
             } else {
                 personajes = data.items;
