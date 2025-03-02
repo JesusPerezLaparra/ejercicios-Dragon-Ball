@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Ejercicio Dragon Ball</title>
+        <link href="./styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <main>
+            <h1>Personajes de Dragon Ball</h1>
+            <input
+                type="search"
+                id="busquedaPersonajeDB"
+                placeholder="Busca un personaje"
+            />
+            <div class="menuFiltros">
+            <h3>Escoge un filtro</h3>
+            <label for="seleccionarGenero"><b>Género:</b></label>
+            <select name="genero" id="selecciongenero">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <label for="seleccionarRaza"> <b>Raza:</b></label>
+        <select name="raza" id="seleccionraza">
+        <option value="saiyan">Saiyan</option>
+        <option value="namekian">Namekian</option>
+        <option value="human">Human</option>
+        <option value="frieza race">Frieza race</option>
+        <option value="android">Android</option>
+        <option value="majin">Majin</option>
+        <option value="god">God</option>
+        <option value="angel">Angel</option>
+        <option value="jiren race">Jiren race</option>
+        <option value="nucleico">Nucleico</option>
+        <option value="nucleicobemigno">Nucleico benigno</option>
+        <option value="evil">Evil</option>
+        <option value="unknown">Unknown</option>
+    </select>
+            <button id="filtrosbtn">Aplicar filtros de búsqueda</button>
+    </div>
+            <div class="listaDragonBall" id="dragonBallList"></div>
+            <button id="botonpagAnt">Anterior página</button>
+            <button id="botonpagSig">Siguiente página</button>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
