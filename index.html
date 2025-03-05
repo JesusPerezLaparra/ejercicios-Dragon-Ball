@@ -15,33 +15,54 @@
                 placeholder="Busca un personaje"
             />
             <div class="menuFiltros">
-            <h3>Escoge un filtro</h3>
-            <label for="seleccionarGenero"><b>Género:</b></label>
-            <select name="genero" id="selecciongenero">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select>
-        <label for="seleccionarRaza"> <b>Raza:</b></label>
-        <select name="raza" id="seleccionraza">
-        <option value="saiyan">Saiyan</option>
-        <option value="namekian">Namekian</option>
-        <option value="human">Human</option>
-        <option value="frieza race">Frieza race</option>
-        <option value="android">Android</option>
-        <option value="majin">Majin</option>
-        <option value="god">God</option>
-        <option value="angel">Angel</option>
-        <option value="jiren race">Jiren race</option>
-        <option value="nucleico">Nucleico</option>
-        <option value="nucleicobenigno">Nucleico benigno</option>
-        <option value="evil">Evil</option>
-        <option value="unknown">Unknown</option>
-    </select>
-            <button id="filtrosbtn">Aplicar filtros de búsqueda</button>
-    </div>
+                <h3>Escoge un filtro</h3>
+                <label for="seleccionarGenero"><b>Género:</b></label>
+                <select name="genero" id="selecciongenero">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="seleccionarRaza"> <b>Raza:</b></label>
+                <select name="raza" id="seleccionraza">
+                    <option value="Saiyan">Saiyan</option>
+                    <option value="Namekian">Namekian</option>
+                    <option value="Human">Human</option>
+                    <option value="Frieza Race">Frieza race</option>
+                    <option value="Android">Android</option>
+                    <option value="Majin">Majin</option>
+                    <option value="God">God</option>
+                    <option value="Angel">Angel</option>
+                    <option value="Jiren Race">Jiren race</option>
+                    <option value="Nucleico">Nucleico</option>
+                    <option value="Nucleico benigno">Nucleico benigno</option>
+                    <option value="Evil">Evil</option>
+                    <option value="Unknown">Unknown</option>
+                </select>
+                <label for="seleccionarAfiliacion"> <b>Afiliación:</b></label>
+                <select name="afiliacion" id="seleccionafiliacion">
+                    <option value="Z Fighter">Z-Fighter</option>
+                    <option value="Red Ribbon Army">Red Ribbon Army</option>
+                    <option value="Namekian Warrior">Namekian Warrior</option>
+                    <option value="Freelancer">Freelancer</option>
+                    <option value="Army of Frieza">Army of Frieza</option>
+                    <option value="Villain">Villain</option>
+                    <option value="Assistant of Beerus">
+                        Assistant of Beerus
+                    </option>
+                    <option value="Pride Troopers">Pride Troopers</option>
+                    <option value="God">God</option>
+                    <option value="Assistant of Vermoud">
+                        Assistant of Vermoud
+                    </option>
+                    <option value="other">Other</option>
+                </select>
+                <button id="filtrosbtn">Aplicar filtros de búsqueda</button>
+            </div>
             <div class="listaDragonBall" id="dragonBallList"></div>
             <button id="botonpagAnt">Anterior página</button>
             <button id="botonpagSig">Siguiente página</button>
+            <dialog id="masinfopersonaje">
+                <button formmethod="cerrar"> Cerrar</button>
+            </dialog>
         </main>
         <script src="./script.js"></script>
     </body>
